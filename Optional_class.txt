@@ -1,0 +1,50 @@
+java.util.Optional
+===================
+it was added in jdk 1.8
+it public final class
+it is not particepated in inheritance
+it is useful for avoiding java.lang.NullPointerException
+
+Methods of optional class
+-------------------------
+1. Optional.empty()
+Definition: Creates an empty Optional instance with no value.
+Syntax:
+Optional<T> emptyOptional = Optional.empty();
+
+2. Optional.of(value)
+Definition: Creates an Optional with a non-null value. Throws NullPointerException if null is passed.
+Syntax:
+Optional<T> optionalWithValue = Optional.of(value);
+
+3. Optional.ofNullable(value)
+Definition: Creates an Optional that can hold either a non-null value or null. If the value is null, it returns an empty Optional.
+Syntax:
+Optional<T> optionalNullable = Optional.ofNullable(value);
+
+
+code:
+-----
+import java.util.Optional;
+
+class Test {
+    public static void main(String[] args) {
+        String[] s = new String[5]; // array with 5 elements
+        s[0] = "ram"; // assign "ram" to index 0
+        s[1] = "sam"; // assign "sam" to index 1
+
+        System.out.println(s[1].toUpperCase()); // print "SAM" in uppercase
+      //  System.out.println(s[2].toUpperCase()); //get java.lang.NullPointerException
+        
+
+        // Using Optional to avoid NullPointerException
+        Optional<String> o = Optional.ofNullable(s[2]); // checking if s[2] is null
+        System.out.println(o); // print Optional.empty if s[2] is null
+
+        if (o.isPresent()) {
+            System.out.println("Value existed: " + o.get());
+        } else {
+            System.out.println("Value not existed");
+        }
+    }
+}

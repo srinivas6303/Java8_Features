@@ -1,0 +1,45 @@
+Stream API (Introduced in Java 8)
+----------------------------------
+Purpose:
+--------
+Stream API is used to process collections of objects in a functional-style way. It allows for easy data manipulation and operations on large sets of data, making code more readable and concise.
+
+(or)
+
+->Introduced in jdk 1.8v 0r java 8
+->while using stream api we can  perform some operation on data
+->Stream Api is used to process the data
+
+Types of Streams:
+-----------------
+java.util.stream: Used to perform operations on data such as filtering, mapping, reducing, etc.
+
+java.io.stream: Used for file-related operations such as reading from or writing to files.
+
+Ways to Create Streams:
+-----------------------
+Stream.of(): Creates a stream from specified values.
+
+stream(): Generates a stream from a collection (like List, Set).
+
+Intermediate Operations (Return a Stream):
+-----------------------------------------
+filter(): Filters data based on a condition.
+map(): Transforms each element in the stream.
+flatMap(): Flattens nested collections into a single stream.
+skip(): Skips the first n elements in the stream.
+limit(): Limits the stream to a certain number of elements.
+distinct(): Removes duplicates from the stream.
+sorted(): Gives sroterd stream
+These operations don't terminate the stream but return a new modified stream.
+
+Terminal Operations (Return a Result):
+--------------------------------------
+count(): Returns the number of elements in the stream.
+collect(): Collects the stream into a collection (e.g., List, Set).
+min(): Returns the minimum element based on a comparator.
+max(): Returns the maximum element based on a comparator.
+sum(): Sums up elements (applicable for numeric streams).
+group(): Groups elements based on a classifier (used with Collectors.groupingBy()).
+These operations consume the stream and return a final result.
+
