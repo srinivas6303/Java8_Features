@@ -2,11 +2,11 @@
 This repository contains examples and explanations of key Java 8 features, including Lambda Expressions, Functional Interfaces, Optional Class, and Stream API.Each section demonstrates the new functionalities introduced in Java 8 to promote efficient and concise coding practices.<br>
 
 ***Folder Structure***<br>
-1.Function_Interface & Lambda Expression: This folder demonstrates how to create and use functional interfaces and lambda expressions to write concise and anonymous methods.<br>
+1.Function_Interface & Lambda Expression:<br>  This folder demonstrates how to create and use functional interfaces and lambda expressions to write concise and anonymous methods.<br>
 
-2.Stream_Api: Examples of intermediate and terminal methods used in the Stream API for handling and processing collections.<br>
+2.Stream_Api:<br>  Examples of intermediate and terminal methods used in the Stream API for handling and processing collections.<br>
 
-3.Optional_class.txt: This file provides details on how to handle null values using the Optional class, preventing NullPointerException.<br>
+3.Optional_class.txt:<br>  This file provides details on how to handle null values using the Optional class, preventing NullPointerException.<br>
 
 ***Features Covered***
 
